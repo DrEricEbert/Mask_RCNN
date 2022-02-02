@@ -13,6 +13,8 @@ pip install pycocotools
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 wget https://github.com/matterport/Mask_RCNN/releases/download/v2.1/mask_rcnn_balloon.h5 > Mask_RCNN/mask_rcnn_balloon.h5
 python setup.py install
+jupyter lab
+open samples/demo.ipynb 
 conda deactivate
 ```
 # Mask R-CNN for Object Detection and Segmentation
