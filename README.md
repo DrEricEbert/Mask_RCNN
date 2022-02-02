@@ -15,6 +15,10 @@ wget https://github.com/matterport/Mask_RCNN/releases/download/v2.1/mask_rcnn_ba
 python setup.py install
 jupyter lab
 open samples/demo.ipynb 
+
+import warnings
+warnings.filterwarnings('ignore')
+
 conda deactivate
 ```
 # Mask R-CNN for Object Detection and Segmentation
