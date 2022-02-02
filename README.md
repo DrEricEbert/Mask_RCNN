@@ -4,6 +4,7 @@ mkdir MaskRCNN
 cd MaskRCNN
 conda create --name Matterprot_MaskRCNN python=3.6.13 tensorflow==1.15.0 Keras==2.2.4 h5py==2.8.0 pip
 conda activate Matterprot_MaskRCNN
+conda install -c conda-forge jupyterlab
 git clone https://github.com/matterport/Mask_RCNN.git
 cd  Mask_RCNN
 pip install -r requirements.txt
