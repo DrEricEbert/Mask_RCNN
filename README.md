@@ -1,3 +1,19 @@
+# Install in Windows with Anaconda
+```
+mkdir MaskRCNN
+cd MaskRCNN
+conda create --name Matterprot_MaskRCNN python=3.6.13 tensorflow==1.15.0 Keras==2.2.4 h5py==2.8.0 pip
+conda activate Matterprot_MaskRCNN
+git clone https://github.com/matterport/Mask_RCNN.git
+cd  Mask_RCNN
+pip install -r requirements.txt
+git clone https://github.com/philferriere/cocoapi.git
+pip install pycocotools
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+wget https://github.com/matterport/Mask_RCNN/releases/download/v2.1/mask_rcnn_balloon.h5 > Mask_RCNN/mask_rcnn_balloon.h5
+python setup.py install
+conda deactivate
+```
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
