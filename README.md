@@ -16,9 +16,12 @@ python setup.py install
 jupyter lab
 open samples/demo.ipynb 
 
+surpress warnings:
 import warnings
 warnings.filterwarnings('ignore')
+tf.logging.set_verbosity(tf.logging.ERROR)
 
+final:
 conda deactivate
 ```
 # Mask R-CNN for Object Detection and Segmentation
